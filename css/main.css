@@ -180,6 +180,31 @@ section {
     font-weight: 300;
 }
 
+.team-card {
+    margin-bottom: 32px;
+}
+
+.team-card__jméno {
+    font-weight: 400;
+    margin: 0;
+}
+
+.team-card__img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 16px auto;
+    border-radius: 50%;
+}
+
+.team-card__popis {
+    margin-bottom: 16px;
+}
+
+.team-card__práce {
+    font-weight: 300;
+    color: var(--orange);
+}
+
 .heading {
     font-size: 1.25rem;
     font-weight: 700;
