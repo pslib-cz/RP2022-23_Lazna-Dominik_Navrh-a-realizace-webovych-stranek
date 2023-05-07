@@ -33,6 +33,11 @@ section {
     padding: 32px 5%;
 }
 
+.main-heading {
+    text-align: center;
+    margin-top: 0;
+}
+
 .header {
     height: 100vh;
     background-image: url(../imgs/úvod.jpg);
@@ -45,6 +50,10 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 16px 5%;
+}
+
+.nav--grey {
+    background-color: var(--lightgrey-background-color);
 }
 
 .nav__logo {
@@ -154,6 +163,21 @@ section {
     padding: 16px 0;
     margin-top: 8px;
     border-top: 1px solid var(--light-blue);
+}
+
+.klient-card {
+    text-align: center;
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+    background-color: var(--lightgrey-background-color);
+}
+
+.klient-card__photo {
+    aspect-ratio: 1 / 1;
+}
+
+.klient-card__genre {
+    font-weight: 300;
 }
 
 .heading {
