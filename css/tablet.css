@@ -1,0 +1,29 @@
+@media only screen and (min-width: 768px) {
+    .container-služby {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .služba {
+        flex: 0 1 30%;
+        margin: 0;
+    }
+
+    .img-text {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .img-text__popis {
+        text-align: left;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+    }
+}
