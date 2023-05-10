@@ -165,9 +165,12 @@ section {
 
 .klient-card {
     text-align: center;
-    padding-bottom: 8px;
     margin-bottom: 32px;
     background-color: var(--lightgrey-background-color);
+}
+
+.klient-card__caption {
+    padding-bottom: 8px;
 }
 
 .klient-card__photo {

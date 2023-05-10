@@ -4,7 +4,7 @@
     }
     
     .nav {
-        padding: auto 10%;
+        padding: 16px 10%;
     }
 
     .nav__links {
@@ -52,5 +52,43 @@
     .header__buttons .btn {
         font-size: 1.25rem;
         margin: 0;
+    }
+
+    .gallery {
+        overflow-x: auto;
+    }
+
+    .container-klienti {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .klient-card {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .klient-card__caption {
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: .25s;
+    }
+
+    .klient-card:hover .klient-card__caption {
+        transform: translateY(-100%);
+        transition: .5s;
+    }
+
+    .klient-card:hover .klient-card__photo {
+        filter: blur(4px) brightness(.5);
+    }
+
+    .main-heading {
+        text-align: left;
     }
 }
