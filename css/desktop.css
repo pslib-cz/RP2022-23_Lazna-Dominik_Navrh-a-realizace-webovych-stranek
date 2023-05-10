@@ -88,6 +88,16 @@
         filter: blur(4px) brightness(.5);
     }
 
+    .container-team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 64px;
+    }
+
+    .team-card {
+        margin: 0;
+    }
+
     .main-heading {
         text-align: left;
     }
