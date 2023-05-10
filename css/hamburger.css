@@ -12,3 +12,9 @@
     height: 4px;
     background-color: var(--text-color);
 }
+
+@media only screen and (min-width: 1280px) {
+    .nav__hamburger-block {
+        display: none;
+    }
+}
