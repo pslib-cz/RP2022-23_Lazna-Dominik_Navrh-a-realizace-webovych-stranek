@@ -52,5 +52,16 @@
 
     .team-card__img {
         flex: 0 0 200px;
+        margin: 0;
+    }
+
+    .footer__up-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__kontakty {
+        display: flex;
+        gap: 1rem;
     }
 }

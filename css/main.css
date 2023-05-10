@@ -156,9 +156,13 @@ section {
     gap: 1rem;
 }
 
+.footer__up-section {
+    padding: 0 5%;
+}
+
 .footer__down-section {
     text-align: center;
-    padding: 16px 0;
+    padding: 16px 5%;
     margin-top: 8px;
     border-top: 1px solid var(--light-blue);
 }
