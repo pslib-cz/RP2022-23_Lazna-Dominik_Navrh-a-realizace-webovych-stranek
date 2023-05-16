@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="./css/tablet.css">
     <link rel="stylesheet" href="./css/desktop.css">
     <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./css/lightgallery.css">
+    <link rel="stylesheet" href="./css/lg-zoom.css">
+    <link rel="stylesheet" href="./css/lg-autoplay.css">
     <title>Ocean Records</title>
 </head>
 <body>
@@ -89,15 +92,31 @@
         </section>
         <section class="grey-section">
             <h2>GALERIE</h2>
-            <div class="gallery">
-                <div class="gallery__photo"><img src="./imgs/galerieStudioDetail.webp" alt="Detail na monitory ve studiu"></div>
-                <div class="gallery__photo"><img src="./imgs/galerieNahrávacíStage.webp" alt="Pohled na místnost, ve které se nahrává"></div>
-                <div class="gallery__photo"><img src="./imgs/galerieStudioÚhel.webp" alt="Zadní úhel na studio"></div>
-                <div class="gallery__photo"><img src="./imgs/galerieStudioZeZadu.webp" alt="Pohled na studio zpoza židlí producentů"></div>
-                <div class="gallery__photo"><img src="./imgs/galerieMixer.webp" alt="Pohled na ruku, která právě pracuje s mixerem"></div>
-                <div class="gallery__photo"><img src="./imgs/galerieChillZone.webp" alt="Záběr na odpočinkovou zonu"></div>
-                <div class="gallery__photo"><img src="./imgs/ženaZaMikrofonem.webp" alt="Pohled na zpěvačku za mikrofonem"></div>
-                <div class="gallery__photo"><img src="./imgs/mikrofon.jpeg" alt="Detail na nahrávací mikrofon"></div>
+            <div class="lightgallery gallery">
+                <a class="gallery__link" href="./imgs/galerieStudioDetail.webp">
+                    <div class="gallery__photo"><img src="./imgs/galerieStudioDetail.webp" alt="Detail na monitory ve studiu"></div>
+                </a>
+                <a class="gallery__link" href="./imgs/galerieNahrávacíStage.webp">
+                    <div class="gallery__photo"><img src="./imgs/galerieNahrávacíStage.webp" alt="Pohled na místnost, ve které se nahrává"></div>
+                </a>
+                <a class="gallery__link" href="./imgs/galerieStudioÚhel.webp">
+                    <div class="gallery__photo"><img src="./imgs/galerieStudioÚhel.webp" alt="Zadní úhel na studio"></div>
+                </a>
+                <a class="gallery__link" href="./imgs/galerieStudioZeZadu.webp">
+                    <div class="gallery__photo"><img src="./imgs/galerieStudioZeZadu.webp" alt="Pohled na studio zpoza židlí producentů"></div>
+                </a>
+                <a class="gallery__link" href="./imgs/galerieMixer.webp">
+                    <div class="gallery__photo"><img src="./imgs/galerieMixer.webp" alt="Pohled na ruku, která právě pracuje s mixerem"></div>
+                </a>
+                <a class="gallery__link" href="./imgs/galerieChillZone.webp">
+                    <div class="gallery__photo"><img src="./imgs/galerieChillZone.webp" alt="Záběr na odpočinkovou zonu"></div>
+                </a>
+                <a class="gallery__link" href="./imgs/ženaZaMikrofonem.webp">
+                    <div class="gallery__photo"><img src="./imgs/ženaZaMikrofonem.webp" alt="Pohled na zpěvačku za mikrofonem"></div>
+                </a>
+                <a class="gallery__link" href="./imgs/mikrofon.jpeg">
+                    <div class="gallery__photo"><img src="./imgs/mikrofon.jpeg" alt="Detail na nahrávací mikrofon"></div>
+                </a>
             </div>
         </section>
     </main>
@@ -119,5 +138,15 @@
         </div>
     </footer>
     <script src="./hamburger.js"></script>
+    <script src="./lightgallery.min.js"></script>
+    <script src="./lg-zoom.min.js"></script>
+    <script src="./lg-autoplay.min.js"></script>
+    <script type="text/javascript">
+        lightGallery(document.querySelector('.lightgallery'), {
+            plugins: [lgZoom, lgAutoplay],
+            speed: 500,
+            selector: ".gallery__link"
+        });
+    </script>
 </body>
 </html>
