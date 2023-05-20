@@ -133,8 +133,11 @@ section {
     overflow-x: scroll;
 }
 
-.gallery__photo {
+.gallery__link {
     flex: 0 0 100%;
+}
+
+.gallery__photo {
     aspect-ratio: 1 / 1;
 }
 
@@ -257,4 +260,8 @@ img {
 .blue-text {
     font-weight: 700;
     color: var(--light-blue);
+}
+
+.fa-solid {
+    margin-right: .5rem;
 }
