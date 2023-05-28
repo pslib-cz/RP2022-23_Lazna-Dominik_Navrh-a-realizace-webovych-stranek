@@ -1,5 +1,6 @@
 html {
     font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
 }
 
 :root {
@@ -20,11 +21,16 @@ body {
 * {
     padding: 0;
     margin: 0;
-    list-style: none;
     text-decoration: none;
-    color: var(--text-color);
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
 
 h2 {
     text-align: center;
@@ -32,10 +38,21 @@ h2 {
 }
 
 section {
-    padding: 32px 5%;
+    padding: 2rem 5%;
 }
 
-.main-heading {
+.nav__logo, .nav__odkaz, .btn, .hlavní-nadpis, h2 {
+    text-transform: uppercase;
+}
+
+.responzivní-obrázek {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hlavní-nadpis {
     text-align: center;
     margin-top: 0;
 }
@@ -51,7 +68,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 5%;
+    padding: 1rem 5%;
     background-color: var(--lightgrey-background-color);
 }
 
@@ -62,87 +79,84 @@ section {
     z-index: 2;
 }
 
-.nav__links {
+.nav__odkazy {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 100vh;
-    padding-top: 64px;
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
     background-color: var(--background-color);
     transform: scaleX(0);
     transform-origin: right;
     transition: .25s;
 }
 
-.nav__links.active {
+.nav__odkazy.active {
     transform: scaleX(1);
     transition: .25s;
     z-index: 1;
 }
 
-.nav__link {
+.nav__odkaz {
     font-weight: 300;
 }
 
 .header__info {
     width: 95%;
     text-align: center;
-    margin: 64px auto 0 auto;
+    margin: 4rem auto 0 auto;
 }
 
 .header__služba {
     margin-top: .5rem;
 }
 
-.header__buttons {
+.header__tlačítka {
     position: absolute;
     left: 0;
-    bottom: 32px;
+    bottom: 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .služba {
     text-align: center;
     width: 300px;
-    margin: 16px auto;
+    margin: 1rem auto;
 }
 
-.služba__img {
+.služba__obrázek {
     aspect-ratio: 1 / 1;
 }
 
 .služba__popis {
-    margin: 8px 0;
+    margin: .5rem 0;
 }
 
-.img-text__popis {
+.obrázek-text__popis {
     text-align: center;
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
-.gallery {
-    display: flex;
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(8, 100%);
     overflow-x: scroll;
 }
 
-.gallery__link {
-    flex: 0 0 100%;
-}
-
-.gallery__photo {
+.galerie__fotka {
     aspect-ratio: 1 / 1;
 }
 
 .footer {
-    padding-top: 32px;
+    padding-top: 2rem;
 }
 
 .footer__kontakty {
@@ -153,67 +167,72 @@ section {
     margin-bottom: 8px;
 }
 
-.footer__socials {
+.footer__sítě {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-.footer__up-section {
+.footer__síť {
+    display: none;
+}
+
+.footer__horní-sekce {
     padding: 0 5%;
 }
 
-.footer__down-section {
+.footer__dolní-sekce {
     text-align: center;
-    padding: 16px 5%;
+    padding: 1rem 5%;
     margin-top: 8px;
     border-top: 1px solid var(--light-blue);
 }
 
-.klient-card {
+.klient-karta {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
     background-color: var(--lightgrey-background-color);
 }
 
-.klient-card__caption {
-    padding-bottom: 8px;
+.klient-karta__popis {
+    padding-bottom: .5rem;
 }
 
-.klient-card__photo {
+.klient-karta__fotka {
     aspect-ratio: 1 / 1;
 }
 
-.klient-card__genre {
+.klient-karta__žánr {
     font-weight: 300;
 }
 
-.team-card {
-    margin-bottom: 32px;
+.team-karta {
+    margin-bottom: 2rem;
 }
 
-.team-card__jméno {
+.team-karta__jméno {
     font-weight: 400;
     margin: 0;
 }
 
-.team-card__img {
+.team-karta__fotka {
     width: 200px;
     height: 200px;
-    margin: 0 auto 16px auto;
+    margin: 0 auto 1rem auto;
     border-radius: 50%;
+    flex-shrink: 0;
 }
 
-.team-card__popis {
-    margin-bottom: 16px;
+.team-karta__popis {
+    margin-bottom: 1rem;
 }
 
-.team-card__práce {
+.team-karta__práce {
     font-weight: 300;
     color: var(--orange);
 }
 
-.heading {
+.nadpis {
     font-size: 1.25rem;
     font-weight: 700;
     margin: 8px 0;
@@ -226,38 +245,31 @@ section {
     padding: .5rem 1rem;
     margin: 0 auto;
     border: 1px solid var(--light-blue);
-    border-radius: 50px;
+    border-radius: 2rem;
 }
 
 .btn:hover {
     background-color: var(--lightblue-transparent);
 }
 
-.btn--orange {
+.btn--oranžový {
     color: var(--orange);
     border-color: var(--orange);
 }
 
-.btn--orange:hover {
+.btn--oranžový:hover {
     background-color: var(--orange-transparent);
 }
 
-.blue-section {
+.modrá-sekce {
     background-color: var(--blue-background-color);
 }
 
-.grey-section {
+.šedá-sekce {
     background-color: var(--lightgrey-background-color);
 }
 
-img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.blue-text {
+.modrý-text {
     font-weight: 700;
     color: var(--light-blue);
 }

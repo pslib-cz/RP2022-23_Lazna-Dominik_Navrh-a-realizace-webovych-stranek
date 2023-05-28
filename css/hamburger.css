@@ -14,7 +14,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .nav__hamburger-block {
+    .nav__hamburger-blok {
         display: none;
     }
 }

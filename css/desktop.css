@@ -1,13 +1,13 @@
 @media only screen and (min-width: 1280px) {
     section {
-        padding: 32px 10%;
+        padding: 2rem 10%;
     }
     
     .nav {
-        padding: 16px 10%;
+        padding: 1rem 10%;
     }
 
-    .nav__links {
+    .nav__odkazy {
         position: static;
         height: auto;
         flex-direction: row;
@@ -17,11 +17,11 @@
         gap: 0;
     }
 
-    .nav__link {
+    .nav__odkaz {
         padding: 16px 32px;
     }
 
-    .nav__link:hover {
+    .nav__odkaz:hover {
         background-color: var(--background-color);
     }
 
@@ -31,7 +31,7 @@
         margin-left: 10%;
     }
 
-    .header__info .blue-text {
+    .header__info .modrý-text {
         display: block;
     }
 
@@ -43,18 +43,18 @@
         font-size: 1.5rem;
     }
 
-    .header__buttons {
+    .header__tlačítka {
         position: static;
         flex-direction: row;
-        margin-top: 16px;
+        margin-top: 1rem;
     }
 
-    .header__buttons .btn {
+    .header__tlačítka .btn {
         font-size: 1.25rem;
         margin: 0;
     }
 
-    .gallery {
+    .galerie {
         overflow-x: auto;
     }
 
@@ -62,12 +62,12 @@
         grid-template-columns: repeat(5, 1fr);
     }
 
-    .klient-card {
+    .klient-karta {
         position: relative;
         overflow: hidden;
     }
 
-    .klient-card__caption {
+    .klient-karta__popis {
         height: 100%;
         position: absolute;
         left: 0;
@@ -79,26 +79,26 @@
         transition: .25s;
     }
 
-    .klient-card:hover .klient-card__caption {
+    .klient-karta:hover .klient-karta__popis {
         transform: translateY(-100%);
         transition: .5s;
     }
 
-    .klient-card:hover .klient-card__photo {
+    .klient-karta:hover .klient-karta__fotka {
         filter: blur(4px) brightness(.5);
     }
 
     .container-team {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 64px;
+        gap: 4rem;
     }
 
-    .team-card {
+    .team-karta {
         margin: 0;
     }
 
-    .main-heading {
+    .hlavní-nadpis {
         text-align: left;
     }
 }
